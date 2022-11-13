@@ -75,4 +75,16 @@ html, h1,h2,h3,h3,h5,h6 {
 
     }
     
-   
+    .bgd{
+        background-image: url("images/bgd.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 9.5em;
+    }
+
+    .bgc{
+        background-image: url("images/bgc.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 9.5em;
+    }

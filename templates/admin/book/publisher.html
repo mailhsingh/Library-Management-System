@@ -1,35 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Custom fonts for this template-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-    <!-- Custom styles for this template-->
-    <link href='../static/bootstrap.min.css' rel="stylesheet">
-    <link href="../static/style.css" rel="stylesheet">
-    <title>PUBLISHERS</title>
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Contact Management</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href='../../../static/bootstrap.min.css' rel="stylesheet">
+  <link href="../../../static/style.css" rel="stylesheet">
+  <script src="../../../static/js/linechart.js"></script>
+
 </head>
-<body class="home">
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <i class="fas fa-address-card"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">Library <sup>Management</sup></div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="../../dashboard.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>DASHBOARD</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Total Books -->
+      <li class="nav-item">
+        <a class="nav-link" href="totalbooks.html">
+          <i class="fas fa-fw fa-book"></i>
+          <span>TOTAL BOOKS</span></a>
+      </li>
+
+      <!-- Nav Item - Issue Books -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-book-open"></i>
+          <span>ISSSUE BOOKS</span></a>
+      </li>
+
+      <!-- Nav Item - Publisher -->
+      <li class="nav-item">
+        <a class="nav-link" href="publisher.html">
+          <i class="fas fa-fw fa-print"></i>
+          <span>PUBLISHERS</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Members -->
+      <li class="nav-item">
+        <a class="nav-link" href="../../allmembers.html">
+          <i class="fas fa-fw fa-users"></i>
+          <span>All MEMBERS</span></a>
+      </li>
+
+      <!-- Nav Item - Terms & Conditions -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-lock-open"></i>
+          <span>TERNS & CONDITIONS</span></a>
+      </li>
+
+      <!-- Nav Item - Settings -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-cogs"></i>
+          <span>SETTINGS</span></a>
+      </li>
+
+      <!-- Nav Item - Logout -->
+      <li class="nav-item">
+        <a class="nav-link" href="../../home.html">
+          <i class="fas fa-fw fa-sign-out-alt"></i>
+          <span>LOGOUT</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
-        <div id="content">
+
+        <!-- Main Content -->
+        <div id="content" class="home">
+
+            <!-- Begin Page Content -->
             <div class="container-fluid">
+                <!-- Page Heading -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-4 mt-4">
-                    <h1 class="h3 mb-0 text-gray-800">Publishers Detail</h1>
-                    <div class="input-group rounded col-md-4">
-                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                <h1 class="h3 mb-0 text-gray-800 col-md-10">Books List</h1>
+                    <div class="input-group rounded col">
                         <span class="input-group-text border-0" id="search-addon">
-                          <i class="fas fa-search"></i>
+                            <a class="fas fa-search" href="../search.html"></a>
                         </span>
                     </div>
+                    Admin Dashboard
+                    <!--<a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i></a>-->
+                </div>
                     <a href="" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
                         <i class="fas fa-download fa-sm text-white-50"></i>
                         Add New Publisher
                     </a>
-                </div>
     
                 <div class="row mt-2 rounded shadow mx-2 bg-white">
                     <div class="col">
