@@ -16,6 +16,7 @@
   <!-- Custom styles for this template-->
   <link href='../../../static/bootstrap.min.css' rel="stylesheet">
   <link href="../../../static/style.css" rel="stylesheet">
+  <link href="../../../static/model.css" rel="stylesheet">
   <script src="../../../static/js/linechart.js"></script>
 
 </head>
@@ -127,14 +128,34 @@
                     <!--<a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i></a>-->
                 </div>
                     <a href="" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-                        <i class="fas fa-download fa-sm text-white-50"></i>
+                        <i class="fas fa-download fa-sm text-white-50 model" id="id01"></i>
                         Add New Publisher
                     </a>
+                    <div id="id01" class="modal">
+                        <form class="modal-content animate" action="" method="post">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="BookShop">&times;</span>
+                                <img src = "./images/logo.png" alt="Book" class="book1">
+                            </div>
+                            <div class="Container">
+                                <label for="uname"><strong>Username</strong></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+                                <label for="psw"><strong>Password</strong></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                                <button type="submit">Login</button>
+                                <label type="checkbox" checked="checked" name="remember">Remember me</label>
+                            </div>
+                            <div class="container" style="background-color:#f1f1f1">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                            </div>
+                        </form>
+                    </div>
     
                 <div class="row mt-2 rounded shadow mx-2 bg-white">
                     <div class="col">
-                        <table class="table table-dark">
-                            <thead>
+                        <table class="table table-bordered">
+                            <thead class="table-light">
                                 <tr>
                                     <th>Publisher ID</th>
                                     <th>Name</th>
